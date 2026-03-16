@@ -11,6 +11,7 @@ public class Note {
         this.Id = idCounter++;
         this.title = title;
         this.content = content;
-        this.timeAndDate =
+        // Ajan sekä päivämäärän löytämiseen käytetty tekoälyä, en osannut itse.
+        this.timeAndDate = java.text.DateFormat.getDateTimeInstance().format(new java.util.Date());
     }
 }
